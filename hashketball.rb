@@ -176,8 +176,10 @@ new_hash = {}
             new_hash = player
           end
         end
+      end  
     end
  end
+ new_hash
 end
 
 
