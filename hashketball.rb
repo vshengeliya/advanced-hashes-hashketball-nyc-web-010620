@@ -153,7 +153,6 @@ def player_numbers (team_name)
   game_hash.each do |place, team|
     if team [:team_name] == team_name
       team.each do |attributes, data|
-        binding.pry
         if attributes == :players
           data.each do |player|
             nums << player [:number]
@@ -185,5 +184,15 @@ new_hash = {}
 end
 
 
+def big_shoe_rebounds (player_name)
+    game_hash.each do |place, team|
+      team.each do |attributes, data|
+        if data.each. do |player|
+          if player.[:shoe].max
+            return player[:rebounds]
+          end
+        end
+      end
+    end
 end
 
