@@ -208,3 +208,15 @@ def most_points_scored
       end
     end
 end
+
+def most_points_scored
+  game_hash.each do |place, team|
+      team.each do |attributes, data|
+        if data.each. do |player|
+          if player.[:points].max
+            return player[:player_name]
+          end
+        end
+      end
+    end
+end
